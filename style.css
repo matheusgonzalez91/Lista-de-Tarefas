@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+.lista-tarefas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    text-align: center;
+    border: 3px solid black;
+    padding: 100px 5%;
+}
+
+.lista-tarefas h1{
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.lista-tarefas input[type=text]{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    outline: none;
+    padding: 0 8px;
+    border: 0;
+    background-color: #ccc;
+}
+
+::placeholder{
+    color: #aaa;
+    font-style: italic;
+}
+
+.lista{
+    padding: 3px;
+    height: 100px;
+    border: 3px solid #ccc;
+    margin: 20px 0;
+    overflow-y: scroll;
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    background: rgb(0, 132, 255);
+    color: white;
+    transition: 1s all;
+}
+
+button:hover{
+    background-color: red;
+}
